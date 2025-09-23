@@ -7,7 +7,7 @@ from typing import List
 import ollama
 
 # Function to get embeddings using Ollama
-def get_ollama_embedding(text, model_name="nomic-embed-text"):
+def get_ollama_embedding(text, model_name="llama3"):
     try:
         # Call the Ollama embeddings API
         response = ollama.embeddings(model=model_name, prompt=text)
